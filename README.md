@@ -1,16 +1,62 @@
-# React + Vite
+Audiophile E-commerce Frontend
+This is a pixel-perfect, fully responsive frontend for the Audiophile e-commerce website. The project is built using React and Vite, with all styling handled by Tailwind CSS based on a provided design system.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a multi-page application that includes product category pages, dynamic product detail pages, and a complete checkout flow with a global cart managed by the React Context API.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✨ Features
+Multi-Page Navigation: Fully functional routes for Home, Headphones, Speakers, and Earphones using react-router-dom.
 
-## React Compiler
+Dynamic Product Pages: A single ProductDetail component handles all products by loading data from a central data.js file.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Global Cart State: A site-wide cart managed with React Context (CartContext.jsx) that allows users to add items, see a summary, and check out.
 
-## Expanding the ESLint configuration
+Interactive Modals:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Cart modal for viewing/clearing the cart.
+
+Order confirmation modal after a successful checkout.
+
+Complete Checkout Flow: A multi-step form for checkout with validation (can be added) and a live-updating summary.
+
+Pixel-Perfect & Responsive: Built from the ground up to match the provided desktop and mobile designs using Tailwind's responsive utilities.
+
+🛠 Tech Stack
+Core: React.js
+
+Bundler: Vite
+
+Styling: Tailwind CSS
+
+Routing: React Router DOM v6
+
+State Management: React Context API
+
+🚀 Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine for development.
+
+Prerequisites
+You must have Node.js (version 20.19+ or 22.12+) installed on your machine.
+
+Installation & Setup
+Clone the repository:
+
+Bash
+
+git clone https://github.com/your-username/audiophile-project.git
+Navigate to the project directory:
+
+Bash
+
+cd audiophile-project
+Install dependencies: This project uses npm.
+
+Bash
+
+npm install
+Run the development server: Once the dependencies are installed, run the development server.
+
+Bash
+
+npm run dev
+The application will be available at http://localhost:5173/
